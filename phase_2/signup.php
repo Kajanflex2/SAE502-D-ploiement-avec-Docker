@@ -2,7 +2,7 @@
 
   require 'con_db/conexdb.php';
 
-  // get back form data
+  // Récupération des données du formulaire depuis la session utilisateur
   $firstname = $_SESSION['signup-data']['firstname'] ?? null;
   $lastname = $_SESSION['signup-data']['lastname'] ?? null;
   $username = $_SESSION['signup-data']['username'] ?? null;
@@ -10,7 +10,7 @@
   $createpassword = $_SESSION['signup-data']['createpassword'] ?? null;
   $confirmpassword = $_SESSION['signup-data']['confirmpassword'] ?? null;
 
-  // delete sessions
+  // Suppression des données de session 'signup-data'
   unset($_SESSION['signup-data']);
 
 ?>
