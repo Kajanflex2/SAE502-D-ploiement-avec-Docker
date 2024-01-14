@@ -74,7 +74,7 @@ function sendmail_verify($username,$email,$verification_token) {
         <div class='email-container'>
             <h2>Récemment, vous avez enregistré un compte sur notre site web !</h2>
             <h5>Confirmez votre e-mail en cliquant sur le lien ci-dessous :</h5>
-            <a href='http://localhost:8080/verify.php?token=$verification_token' target='_blank' class='confirmation-link'>Cliquez ici</a>
+            <a href='http://localhost:8082/verify.php?token=$verification_token' target='_blank' class='confirmation-link'>Cliquez ici</a>
         </div>
         </body>
         </html>";
