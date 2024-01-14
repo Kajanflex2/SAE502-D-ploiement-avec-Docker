@@ -18,7 +18,7 @@ $dbpass = "";        // Mot de passe de la base de données
 $dbname = "streamDB"; // Nom de la base de données
 
 // URL de base pour les liens relatifs dans l'application
-$base_url = 'http://localhost:8080/';
+$base_url = 'http://localhost:8083/';
 
 // Établissement de la connexion à la base de données
 $conn = new mysqli($host, $dbuser, $dbpass, $dbname);
