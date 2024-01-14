@@ -70,8 +70,12 @@ select {
   font-size: larger;
 }
 
+.form__section .btn:hover {
+  background-color: #e45a15e6; /* Légère variation de couleur au survol */
+}
+
 .btn {
-  display: inline-block;
+  display: flex;
   width: fit-content;
   padding: 0.6rem 1.2rem;
   background-color: #0081f1;;
@@ -80,7 +84,15 @@ select {
   transition: var(--transition);
   color: var(--color-white);
   font-size: medium;
+  border-radius: 5px;
+  margin-top: 10px; /* Espacement entre les boutons */
+
 }
+
+
+
+/**********************************************************************************/
+
 
 /* Media Query */
 

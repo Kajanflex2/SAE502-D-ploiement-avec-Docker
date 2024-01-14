@@ -118,9 +118,14 @@ if(isset($_POST['submit'])){
         $_SESSION['signup']="Veuillez saisir votre nom d'utilisateur";
     }elseif(!$email){
         $_SESSION['signup']="Veuillez saisir votre adresse e-mail valide";
-    }elseif(strlen($createpassword) < 8 || strlen($confirmpassword) <8){
-        $_SESSION['signup']="Le mot de passe doit comporter 8 caractères";
-    }elseif(!$avatar['name']){
+    }elseif(strlen($createpassword) < 12 || strlen($confirmpassword) <12){
+        $_SESSION['signup']="Le mot de passe doit comporter 12 caractères";
+    }elseif (!preg_match('@[A-Z]@', $createpassword) ||
+            !preg_match('@[a-z]@', $createpassword) ||
+            !preg_match('@[0-9]@', $createpassword) ||
+            !preg_match('@[^\w]@', $createpassword)) {
+            $_SESSION['signup']="Le mot de passe doit contenir au moins un chiffre, une majuscule, une minuscule et un caractère spécial.";
+    } elseif(!$avatar['name']){
         $_SESSION['signup']="Veuillez sélectionner l'image de votre avatar";
     }else{
 

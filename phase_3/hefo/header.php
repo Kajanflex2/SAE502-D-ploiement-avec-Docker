@@ -56,6 +56,7 @@ require __DIR__ . '/../con_db/conexdb.php';
 
                     <ul>
                         <li><a href="<?= $base_url ?>admin/index.php">Index</i></a></li>
+                        <li><a href="<?= $base_url ?>resetpassword.php">Réinitialiser mot de passe</i></a></li>
                         <li><a href="<?= $base_url ?>logout.php">Déconnexion</i></a></li>
 
                     </ul>

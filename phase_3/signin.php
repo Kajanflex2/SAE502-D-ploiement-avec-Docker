@@ -49,9 +49,13 @@ unset($_SESSION['signin-data']);
                   <input type="text" placeholder="Adresse e-mail" name="username_email" >
                   <input type="password" placeholder="Saisissez votre mot de passe" name="password" >
                   <button type="submit" class="btn" name="submit"> Connexion</button>
-                  <small>Vous n'avez pas de compte ? <a href="signup.php">Créer un compte</a></small>
+                 <!-- <small>Vous n'avez pas de compte ? <a href="signup.php">Créer un compte</a></small> -->
               </form>
 
+                <form action="signup.php">
+                    <button  type="submit" class="btn">Créer un compte</button>
+                </form>
+              
           </div>
       </section>
 </body>
