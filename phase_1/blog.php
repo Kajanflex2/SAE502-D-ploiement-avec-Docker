@@ -109,7 +109,7 @@ $posts = mysqli_query($conn,$query);
 
                     <div class="post__author-info">
 
-                        <h5>Post By : <?= "{$author['firstname']} {$author['lastname']}" ?></h5>
+                        <h5>Publié par : <?= "{$author['firstname']} {$author['lastname']}" ?></h5>
 
                         <small>
 
