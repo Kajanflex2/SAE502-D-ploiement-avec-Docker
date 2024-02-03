@@ -16,7 +16,7 @@ try
     $mail->isSMTP();        //Devine o uso de SMTP no envio
     $mail->SMTPAuth = true; //Habilita a autenticação SMTP
     $mail->Username   = 'tenser.manerso@gmail.com';
-    $mail->Password   = 'vaxeicwfyntoxokp ';
+    $mail->Password   = ' ';
     // Criptografia do envio SSL também é aceito
     $mail->SMTPSecure = 'tls';
     // Informações específicadas pelo Google
